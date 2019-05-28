@@ -77,5 +77,5 @@ function reset() {
     guessesRemaining = 6;
     wrongGuess = [];
     blanksAndCorrect = [];
-    Game()
+    initGame()
 }
