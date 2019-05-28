@@ -1,7 +1,7 @@
 
 // need to make array for the cartoon names
 
-var cartoons = ["Tom"]
+var cartoons = ["tomandjerry","mickeymouse","popeye","scoobydoo","looneytunes","rugrats"]
 
 // need to make variables for values
 
