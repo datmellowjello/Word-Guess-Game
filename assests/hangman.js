@@ -50,6 +50,7 @@ function setEventListeners(){
 function checkIfUserLost(){
   if(guessesRemaining <= 0){
     alert('you lost')
+    reset()
   }
 }
 function shouldGuessesGoDown(letterGuessed){
