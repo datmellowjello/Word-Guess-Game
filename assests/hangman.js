@@ -39,7 +39,7 @@ function setEventListeners(){
     if(wordHasBeenGuessed()){
       wins++
       document.getElementById('winscounter').textContent = wins
-      initGame()
+      reset()
     }
     shouldGuessesGoDown(e.key)
     console.log(currentWord, lettersGuessed, guessesRemaining)
@@ -76,6 +76,6 @@ function showLettersOrDashes() {
 }
 function reset() {
     guessesRemaining = 6;
-    lettersGuessed = [];
+    lettersGuessed = [''];
     initGame()
 }
