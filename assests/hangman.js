@@ -47,15 +47,15 @@ function setEventListeners(){
     checkIfUserLost()
   }
 }
+function shouldGuessesGoDown(letterGuessed){
+  if(!currentWord.includes(letterGuessed)){
+    guessesRemaining = guessesRemaining - 1
+  }
+}
 function checkIfUserLost(){
   if(guessesRemaining <= 0){
     alert('you lost')
     reset()
-  }
-}
-function shouldGuessesGoDown(letterGuessed){
-  if(!currentWord.includes(letterGuessed)){
-    guessesRemaining = guessesRemaining - 1
   }
 }
 function updateDOM(){
@@ -76,7 +76,6 @@ function showLettersOrDashes() {
 }
 function reset() {
     guessesRemaining = 6;
-    wrongGuess = [];
-    blanksAndCorrect = [];
+    lettersGuessed = [];
     initGame()
 }
