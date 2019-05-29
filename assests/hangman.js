@@ -1,6 +1,5 @@
 
 
-
 let possibleWords = ["it","jaws","halloween","frankenstein","psycho","theshining"]
 let currentWord = 'jaws'
 let wins = 0
@@ -23,7 +22,7 @@ function wordHasBeenGuessed(){
   return true
 }
 function assignCurrentWord() {
-  const index = Math.floor(Math.random() * ((possibleWords.length -1) - 0 + 1)) + 0;
+  const index = Math.floor(Math.random() * possibleWords.length);
   currentWord = possibleWords[index]
 }
 function setEventListeners(){
