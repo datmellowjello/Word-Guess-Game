@@ -1,7 +1,7 @@
 
 
 
-let possibleWords = ["it","jaws","popeye","scoobydoo","looneytunes","rugrats"]
+let possibleWords = ["it","jaws","halloween","frankenstein","psycho","theshining"]
 let currentWord = 'jaws'
 let wins = 0
 let guessesRemaining = 6
