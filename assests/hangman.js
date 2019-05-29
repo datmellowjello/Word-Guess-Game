@@ -1,4 +1,5 @@
 
+var h = document.getElementById("halloween");
 
 let possibleWords = ["it","jaws","halloween","frankenstein","psycho","theshining"]
 let currentWord = 'jaws'
@@ -24,6 +25,16 @@ function wordHasBeenGuessed(){
 function assignCurrentWord() {
   const index = Math.floor(Math.random() * possibleWords.length);
   currentWord = possibleWords[index]
+}
+function aud () {
+  if (lettersGuessed.includes(possibleWords[2])){
+    h.play ();
+    document.getElementById("image").src="assests\images\gamehalloween.jpg";
+  }
+  else {
+    h.pause ();
+  }
+
 }
 function setEventListeners(){
   document.onkeyup = function(e){
@@ -66,6 +77,7 @@ function showLettersOrDashes() {
   }
   document.getElementById('currentword').textContent = displayWord
 }
+
 function reset() {
     guessesRemaining = 6;
     lettersGuessed = [''];
