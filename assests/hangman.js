@@ -1,15 +1,8 @@
 
-// Game function
 
-// reset function
 
-//check letters function
-
-// won check funtion 
-
-// 
-let possibleWords = ["tomandjerry","mickeymouse","popeye","scoobydoo","looneytunes","rugrats"]
-let currentWord = 'popeye'
+let possibleWords = ["it","jaws","popeye","scoobydoo","looneytunes","rugrats"]
+let currentWord = 'jaws'
 let wins = 0
 let guessesRemaining = 6
 let lettersGuessed = []
