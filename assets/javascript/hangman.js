@@ -27,7 +27,7 @@ function assignCurrentWord() {
   currentWord = possibleWords[index]
 }
 function aud () {
-  if (lettersGuessed.includes(possibleWords[2])){
+  if (currentWord = possibleWords[2]){
     h.play ();
     document.getElementById("image").src="assests\images\gamehalloween.jpg";
   }
