@@ -29,7 +29,7 @@ function assignCurrentWord() {
 function aud () {
   if (currentWord = possibleWords[2]){
     h.play ();
-    document.getElementById("image").src="assests\images\gamehalloween.jpg";
+    document.getElementById("image").src="assets\images\gamehalloween.jpg";
   }
   else {
     h.pause ();
